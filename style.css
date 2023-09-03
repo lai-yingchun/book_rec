@@ -1,0 +1,125 @@
+/*整體樣式*/
+html {
+	height: 100%;
+}
+
+body {
+	background-image: linear-gradient(to left, white 65%, #FBE5D6 35%);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+}
+
+#window-container {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#window-pop {
+	background: white;
+	width: 30%;
+	margin: 3.5% auto;
+	overflow: auto;
+	border-radius: 3px;
+}
+
+.window-content {
+	width: auto;
+	height: 616px;
+	line-height: 200px;
+	overflow: auto;
+	text-align: center;
+}
+
+span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+/*網頁排版*/
+#layout {
+	width: 99%;
+	height: 100%;
+	margin: auto;
+}
+
+/*自動換行*/
+div {
+	word-wrap: break-word;
+	word-break: normal;
+	user-select: none;
+}
+
+.header {
+	height: 50px;
+	position: absolute;
+	margin-top: 5px;
+	z-index: 900;
+}
+
+#headerimg:hover {
+	opacity: 0.8;
+}
+
+img.animated-gif {
+	width: 175px;
+	height: auto;
+}
+
+.left-section {
+	float: left;
+	height: 100%;
+	width: 35%;
+}
+
+.right-section {
+	float: left;
+	height: 100%;
+	width: 65%;
+}
+
+#tit {
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 40px;
+	text-align: center;
+}
+
+#account {
+	padding: 3px;
+	width: 40%;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+}
+
+#password {
+	padding: 3px;
+	width: 40%;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+}
+
+.btn {
+	background-color: #203057;
+	font-size: 20px;
+	font-family: DFKai-sb;
+	color: white;
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+	user-select: none;
+}
+
+.btn:hover {
+	background-color: #fff;
+	border: 2px #203057 solid;
+	color: #203057;
+}

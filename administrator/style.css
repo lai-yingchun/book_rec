@@ -1,0 +1,425 @@
+/* 整體樣式 */
+html {
+	height: 100%;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #FBE5D6 15%, white 85%);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100%;
+}
+
+input:disabled {
+	text-align: center;
+	background-color: #D3D3D3;
+	color: #203057;
+	border-color: #203057;
+	font-size: 20px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+}
+
+#window-container {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#window-pop {
+	background: white;
+	width: 30%;
+	margin: 3.5% auto;
+	overflow: auto;
+	border-radius: 3px;
+}
+
+.window-content {
+	width: auto;
+	height: 616px;
+	line-height: 200px;
+	overflow: auto;
+	text-align: center;
+}
+
+span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+/*網頁排版*/
+#layout {
+	width: 99%;
+	height: 100%;
+	margin: auto;
+}
+
+/*自動換行*/
+div {
+	word-wrap: break-word;
+	word-break: normal;
+	user-select: none;
+}
+
+/* header */
+.header {
+	height: 50px;
+	position: absolute;
+	margin-top: 5px;
+	z-index: 900;
+}
+
+#headerimg:hover {
+	opacity: 0.8;
+}
+
+img.animated-gif {
+	width: 175px;
+	height: auto;
+}
+
+/* 帳號 */
+#account {
+	padding: 3px;
+	width: 40%;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+}
+
+/* 密碼 */
+#password {
+	padding: 3px;
+	width: 40%;
+	border-radius: 3px;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+}
+
+/* 使用者 */
+#user {
+	float: right;
+	width: 11%;
+	margin-top: -41px;
+	margin-right: 37px;
+	font-size: 20px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #203057;
+}
+
+/* 左區塊 */
+.left-section {
+	float: left;
+	height: 100%;
+	width: 35%;
+}
+
+/* 左區塊標題 */
+#la-tit {
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 40px;
+}
+
+/* 中間標題 */
+#mid-title {
+	text-align: center;
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 40px;
+	user-select: none;
+}
+
+/* 右區塊 */
+.right-section {
+	float: left;
+	height: 100%;
+	width: 65%;
+}
+
+/* 右區塊標題 */
+#tit {
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 40px;
+	text-align: center;
+}
+
+/* 中西文下拉選單 */
+.language-switch {
+	background-color: white;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #808080;
+	height: 37px;
+	width: 120px;
+	border-radius: 3px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.language-item {
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #000000
+}
+
+.language-item:checked {
+	color: white;
+	background-color: #203057;
+}
+
+/* 採購狀況下拉選單 */
+.state-switch {
+	background-color: white;
+	font-size: 18px;
+	font-family: DFKai-sb;
+	color: #808080;
+	height: 37px;
+	width: 120px;
+	border-radius: 3px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.state-item {
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #000000
+}
+
+.state-item:checked {
+	color: white;
+	background-color: #203057;
+}
+
+/* 下拉選單 */
+.dropdown-item {
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: black;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: white;
+	background-color: #203057;
+}
+
+/* 搜尋 */
+#txt-search {
+	height: 37px;
+	width: 250px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+}
+
+#search {
+	background-color: #203057;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: white;
+	height: 37px;
+	width: 98px;
+	border-radius: 3px;
+	margin-left: 1.5%;
+}
+
+/* 路徑 */
+.breadcrumb-item a {
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 20px;
+	text-decoration: none;
+	/* 初始狀態下不顯示底線 */
+	user-select: none;
+}
+
+.breadcrumb-item a:hover {
+	text-decoration: underline;
+	/* 在hover時顯示底線 */
+}
+
+/* 按鈕 */
+.btn {
+	background-color: #203057;
+	font-size: 20px;
+	font-family: DFKai-sb;
+	color: white;
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+	user-select: none;
+}
+
+.btn:hover {
+	background-color: #fff;
+	border: 2px #203057 solid;
+	color: #203057;
+}
+
+/* 歷史推薦紀錄 btn */
+#history-btn {
+	background-color: #203057;
+	font-size: 20px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 3px;
+}
+
+/* 回首頁 btn */
+/* #bindex-btn {
+	background-color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #203057;
+	height: 50px;
+	width: 250px;
+	border-radius: 3px;
+} */
+
+/* 必填符號 */
+.required-label::before {
+	content: "*";
+	color: red;
+	margin-right: 4px;
+}
+
+/* #buysit-title{
+	text-align:center;
+	color:#203057;
+	font-family:'Times New Roman','DFKai-sb';
+	font-size:40px;
+	user-select:none;
+} */
+
+/* 返回 */
+#bbtn {
+	background-color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #203057;
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+}
+
+#bbtn:hover {
+	background-color: #203057;
+	border: 2px #203057 solid;
+	color: white;
+}
+
+#gobackButton {
+	background-color: white;
+	font-size: 20px;
+	font-family: DFKai-sb;
+	color: #203057;
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+#gobackButton:hover {
+	background-color: #203057;
+	border: 2px #203057 solid;
+	color: white;
+}
+
+/* 通知欄 */
+#notice {
+	color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 32px;
+	margin-top: 10px;
+}
+
+#notice-table {
+	color: black;
+	background-color: white;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 18px;
+	width: 480px;
+}
+
+/* 統計推薦紀錄 btn */
+.cbtn {
+	font-size: 20px;
+	height: 50px;
+	width: 250px;
+	border-radius: 3px;
+	background-color: #203057;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: white;
+	width: 250px;
+}
+
+.cbtn:hover {
+	background-color: #fff;
+	border: 2px #203057 solid;
+	color: #203057;
+}
+
+
+
+.inbtn {
+	background-color: white;
+	font-size: 20px;
+	font-family: DFKai-sb;
+	color: #203057;
+	height: 40px;
+	width: 150px;
+	border-radius: 3px;
+	user-select: none;
+}
+
+.inbtn:hover {
+	background-color: #203057;
+	border: 2px #203057 solid;
+	color: white;
+}
+
+ul li {
+	list-style-type: none;
+	user-select: none;
+}
+
+
+/* 確定 btn */
+#sure {
+	background-color: #203057;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: white;
+	height: 37px;
+	width: 98px;
+	border-radius: 3px;
+}
+
+/* 取消 btn */
+#cancel {
+	background-color: white;
+	font-size: 18px;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	color: #203057;
+	height: 37px;
+	width: 98px;
+	border-radius: 3px;
+}
+
+/* 推薦紀錄表格 */
+#record-table {
+	background-color: white;
+	font-family: 'Times New Roman', 'DFKai-sb';
+	font-size: 20px;
+	text-align: center;
+}
